@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container vopros">
+		<div>
+			<h2>В каком году начала вторая мировая война?</h2>
+		</div>
+		<div class="border py-3 px-3 otvet1">1945</div>
+		<div class="border py-3 px-3 otvet2">1939</div>
+		<div class="border py-3 px-3 otvet3">1941</div>
+	</div>
+
+	<div class="container vopros2" style="display: none;">
+		<div>
+			<h2>сколько материков?</h2>
+		</div>
+		<div class="border py-3 px-3 otvet4">2</div>
+		<div class="border py-3 px-3 otvet5">9</div>
+		<div class="border py-3 px-3 otvet6">6</div>
+	</div>
+
+	<div class="container vopros3" style="display: none;">
+		<div>
+			<h2>сколько будет 2+2*2</h2>
+		</div>
+		<div class="border py-3 px-3 otvet7">8</div>
+		<div class="border py-3 px-3 otvet8">4</div>
+		<div class="border py-3 px-3 otvet9">6</div>
+	</div>
+
+	<div class="container vopros4" style="display: none;">
+		<div>
+			<h2>сколько будет 100*100</h2>
+		</div>
+		<div class="border py-3 px-3 otvet10">10.000</div>
+		<div class="border py-3 px-3 otvet11">5000</div>
+		<div class="border py-3 px-3 otvet12">10.000.000</div>
+	</div>
+	<script type="text/javascript">
+		document.querySelector('.otvet1').onclick = function() { 
+   		alert('неправильно'); 
+		}
+		document.querySelector('.otvet2').onclick = function() { 
+   		alert('молодец'); 
+   		document.querySelector(".vopros").style.display = "none"
+   		document.querySelector(".vopros2").style.display = "block"
+		}
+		document.querySelector('.otvet3').onclick = function() { 
+   		alert('учи историю'); 
+		} 
+
+		document.querySelector('.otvet4').onclick = function() { 
+   		alert('неправильно'); 
+		}
+		document.querySelector('.otvet5').onclick = function() { 
+   		alert('учи географию'); 
+		}
+		document.querySelector('.otvet6').onclick = function() { 
+   		alert('молодчик'); 
+   		document.querySelector(".vopros2").style.display = "none"
+   		document.querySelector(".vopros3").style.display = "block"
+		} 
+
+		document.querySelector('.otvet7').onclick = function() { 
+   		alert('неправильно'); 
+		}
+		document.querySelector('.otvet8').onclick = function() { 
+   		alert('учи математику'); 
+		}
+		document.querySelector('.otvet9').onclick = function() { 
+   		alert('да ты математик'); 
+   		document.querySelector(".vopros3").style.display = "none"
+   		document.querySelector(".vopros4").style.display = "block"
+		} 
+
+		document.querySelector('.otvet10').onclick = function() { 
+   		alert('да ты математик'); 
+		}
+		document.querySelector('.otvet11').onclick = function() { 
+   		alert('учи математику'); 
+		}
+		document.querySelector('.otvet12').onclick = function() { 
+   		alert('неправильно'); 
+   		document.querySelector(".vopros3").style.display = "none"
+   		document.querySelector(".vopros4").style.display = "block"
+		} 
+	</script>
+
+</html>
